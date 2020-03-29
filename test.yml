@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+  - name: Install sl
+    apt:
+      name: sl
+      state: present
+
+- hosts: all
+  tasks:
+  - name: Uninstall sl
+    apt:
+      name: sl
+      state: absent
